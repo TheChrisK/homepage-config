@@ -1,0 +1,29 @@
+---
+# For configuration options and examples, please see:
+# https://github.com/benphelps/homepage/wiki/Settings
+
+title: # ANY TITLE
+color: stone
+base: # URL
+target: _blank
+fiveColumns: true
+background:
+  image: /images/hercules.jpg #STAR CITIZEN HERCULES WALLPAPER
+  saturate: 40
+  brightness: 50
+  opacity: 50
+
+layout:
+    Media:
+      style: row
+      columns: 5
+    Infrastructure:
+      style: column
+    AdGuard:
+      style: column
+    Applications:
+      style: column
+    Duplicati:
+      style: column
+    Docker:
+      style: column

@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  homepage:
+    image: ghcr.io/benphelps/homepage:nightly
+    container_name: homepage
+    ports:
+      - 3002:3000
+    volumes:
+      - /homepage:/app/config # Make sure your local config directory exists
+      - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations
+      - /homepage/icons:/app/public/icons
+      - /homepage/images:/app/public/images

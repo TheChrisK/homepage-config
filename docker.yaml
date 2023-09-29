@@ -1,0 +1,58 @@
+---
+# For configuration options and examples, please see:
+# https://github.com/benphelps/homepage/wiki/Docker-Integration
+
+# my-docker:
+#   host: 127.0.0.1
+#  port: 2375
+
+apps:
+    socket: /var/run/docker.sock
+
+proxy:
+    host: # IP ADDRESS OF DOCKER HOST
+    port: 2376
+
+htpc:
+    host: # IP ADDRESS OF DOCKER HOST
+    port: 2376
+
+nextcloud:
+    host: # IP ADDRESS OF DOCKER HOST
+    port: 2376
+
+plex:
+    host: # IP ADDRESS OF DOCKER HOST
+    port: 2376
+
+guacamole:
+    host: # IP ADDRESS OF DOCKER HOST
+    port: 2376
+
+librenms:
+    host: # IP ADDRESS OF DOCKER HOST
+    port: 2376
+
+deluge:
+    host: # IP ADDRESS OF DOCKER HOST
+    port: 2376
+
+vaultwarden:
+    host: # IP ADDRESS OF DOCKER HOST
+    port: 2376
+
+grafana:
+    host: # IP ADDRESS OF DOCKER HOST
+    port: 2376
+
+adguard1:
+    host: # IP ADDRESS OF DOCKER HOST
+    port: 2376
+
+adguard2:
+    host: # IP ADDRESS OF DOCKER HOST
+    port: 2376
+
+azrlnxapp01:
+    host: # IP ADDRESS OF DOCKER HOST
+    port: 2376

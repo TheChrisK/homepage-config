@@ -1,0 +1,52 @@
+---
+# For configuration options and examples, please see:
+# https://github.com/benphelps/homepage/wiki/Bookmarks
+
+- Tools and Utilities:
+    - Github:
+        - icon: /icons/github.png
+          href: https://github.com/
+    - Cloudflare:
+        - icon: /icons/cloudflare.png
+          href: https://cloudflare.com/
+    - LSIO:
+        - icon: https://raw.githubusercontent.com/TheChrisK/icons/main/png/lsio.png
+          href: https://fleet.linuxserver.io/
+
+- Torrents:
+    - Speed.cd:
+        - icon: https://i.imgur.com/ILk9Yb3.png
+          href: https://speed.cd/
+    - My Anonamouse:
+        - icon: https://alternativeer.com/data/resize/Myanonamouse.netLalHJP.png
+          href: https://www.myanonamouse.net/
+
+- Entertainment:
+    - Reddit:
+        - icon: /icons/reddit.png
+          href: https://reddit.com/
+    - The Poster Database:
+        - icon: https://raw.githubusercontent.com/TheChrisK/icons/main/png/tpdb.png 
+          href: https://theposterdb.com/
+    - YouTube:
+        - icon: /icons/youtube.png
+          href: https://youtube.com/
+
+- Local:
+    - Weather Underground:
+        - icon: https://raw.githubusercontent.com/TheChrisK/icons/main/png/weatherunderground.png
+          href: https://www.wunderground.com/weather/KOMA/
+    - Windy:
+        - icon: https://raw.githubusercontent.com/TheChrisK/icons/main/png/windy2.png
+          href: https://www.windy.com/-Rain-thunder-rain?rain,41.295,-96.106,11
+    - r/Omaha:
+        - icon: /icons/reddit.png
+          href: https://omaha.reddit.com/
+
+- E-Mail:
+    - GMail:
+        - icon: /icons/gmail.png
+          href: https://mail.google.com/
+    - Zoho:
+        - icon: /icons/zohomail.png
+          href: https://mail.zoho.com/

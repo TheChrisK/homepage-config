@@ -1,0 +1,43 @@
+---
+# For configuration options and examples, please see:
+# https://github.com/benphelps/homepage/wiki/Information-Widgets
+
+- greeting:
+    text_size: l
+    text: #ANY TEXT YOU LIKE
+
+- logo:
+    icon: # URL OF LOGO
+
+- resources:
+    label: # HOSTNAME
+    cpu: true
+    memory: true
+    disk: /
+    expanded: true
+
+- resources:
+    label: # HOSTNAME
+    url: # URL:PORT
+    cpu: true
+    disk: /
+    expanded: true
+
+- search:
+    provider: duckduckgo
+    focus: true
+    target: _blank
+
+- datetime:
+    format:
+      dateStyle: short
+      timeStyle: short
+      hour12: true
+
+
+- openmeteo:
+    label: #CITY NAME 
+    latitude: #LAT
+    longitude: #LON
+    units: imperial
+    cache: 30 # Time in minutes to cache API responses, to stay within limits

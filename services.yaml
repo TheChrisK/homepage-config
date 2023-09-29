@@ -1,0 +1,350 @@
+---
+# For configuration options and examples, please see:
+# https://github.com/benphelps/homepage/wiki/Services
+
+- Media:
+    - Plex:
+        icon: /icons/plex.png
+        href: https://
+        description: Plex Media Server
+        server: plex
+        container: plex
+        widget:
+          type: plex
+          url: https://
+          key: 
+    - Tautulli:
+        icon: /icons/tautulli.png
+        href: https://
+        description: Plex monitoring and history database
+        server: apps
+        container: tautulli
+        widget:
+          type: tautulli
+          url: https://
+          key: 
+    - Radarr:
+        icon: /icons/radarr.png
+        href: https://
+        description: Movie management
+        server: htpc
+        container: radarr
+        widget:
+          type: radarr
+          url: https://
+          key: 
+    - Sonarr:
+        icon: /icons/sonarr.png
+        href: https://
+        description: Series management
+        server: htpc
+        container: sonarr
+        widget:
+          type: sonarr
+          url: https://
+          key: 
+    - Bazarr:
+        icon: bazarr.png
+        href: https://
+        description: Subtitle managment
+        server: htpc
+        container: bazarr
+        widget:
+          type: bazarr
+          url: https
+          key: 
+    - Deluge:
+        icon: /icons/deluge.png
+        href: https://
+        description: Torrent client
+        server: deluge
+        container: deluge
+        widget:
+          type: deluge
+          url: https://
+          password: 
+    - Lidarr:
+        icon: lidarr.png
+        href: https://
+        description: Music managment
+        server: htpc
+        container: lidarr
+        widget:
+          type: lidarr
+          url: https://
+          key: 
+    - Overseerr:
+        icon: overseerr.png
+        href: https://
+        description: Plex media requests
+        server: apps
+        container: overseerr
+        widget:
+          type: overseerr
+          url: https://
+          key: 
+    - Prowlarr:
+        icon: prowlarr.png
+        href: https://
+        description: Indexer management
+        server: htpc
+        container: prowlarr
+        widget:
+          type: prowlarr
+          url: http://
+          key: 
+    - qBittorrent:
+        icon: qbittorrent.png
+        href: https://
+        description: Private Tracker Downloader
+        server: htpc
+        container: qbittorrent
+        widget:
+          type: qbittorrent
+          url: http://
+          username: 
+          password: 
+
+- Infrastructure:
+    - OPNSense:
+        icon: /icons/opnsense.png
+        href: https://
+        description: Router and firewall
+        widget:
+          type: opnsense
+          url: https://
+          username: 
+          password: 
+    - LibreNMS:
+        icon: /icons/librenms.png
+        href: https://
+        description: Network monitoring
+        server: librenms
+        container: librenms
+    - NGINX Proxy Manager:
+        icon: /icons/npm.png
+        href: https://
+        description: Reverse proxy
+        server: proxy
+        container: npm_app
+    - UniFi:
+        icon: /icons/unifi.png
+        href: https://
+        description: Ubiquiti Cloud Key
+    - Proxmox:
+        icon: proxmox.png
+        href: https://
+        description: Virtual machine management
+        widget:
+          type: proxmox
+          url: https://
+          username: username@pam!test
+          password: #API SECRET KEY
+    - Synology NAS:
+        icon: /icons/synology-dsm.png
+        href: https://
+        description: Synology DSM
+    - TrueNAS:
+        icon: /icons/truenas.png
+        href: https://
+        description: TrueNAS
+        widget:
+          type: truenas
+          url: https://
+          username: root
+          password:  
+- AdGuard:
+    - AdGuard Node 1:
+        icon: /icons/adguard-home.png
+        href: https://
+        description: LXC (PROXMOX02)
+        server: adguard1
+        container: adguard
+        widget:
+          type: adguard
+          url: https://
+          username: 
+          password: 
+    - AdGuard Node 2:
+        icon: /icons/adguard-home.png
+        href: https://
+        description: Raspberry Pi 2
+        server: adguard2
+        container: adguard
+        widget:
+          type: adguard
+          url: https://
+          username: # USER
+          password: # PASSWORD
+    - AdGuard Status Dashboard: #UPTIME KUMA DASHBOARD FOR ADGUARD
+        icon: /icons/adguard-home.png
+        href: https://
+        description: Uptime dashboard
+        server: apps
+        container: uptime-kuma
+        widget:
+          type: uptimekuma
+          url: https://
+          slug: adguard
+
+- Duplicati:
+    - MONLNXAPP201:
+        icon: /icons/duplicati.png
+        href: https://app02-bkup.domain.com
+        description: App server docker backup
+    - MONLNXPLX104:
+        icon: /icons/duplicati.png
+        href: https://plex-bkup.domain.com
+        description: Plex server docker backup
+    - MONLNXRPS111:
+        icon: /icons/duplicati.png
+        href: https://rps01-bkup.domain.com
+        description: Proxy server docker backup
+    - MONLNXARR103:
+        icon: /icons/duplicati.png
+        href: https://htpc-bkup.domain.com
+        description: HTPC server docker backup
+    - MONLNXPAM112:
+        icon: /icons/duplicati.png
+        href: https://vw-bkup.domain.com
+        description: Vaultwarden backup
+    - MONLNXCLD108:
+        icon: /icons/duplicati.png
+        href: https://cloud-bkup.domain.com
+        description: Nextcloud backup
+
+- Applications:
+    - Skyview:
+        icon: /icons/piaware.png
+        href: https://skyview.domain.com
+        description: Flightfeeder ADSB map
+    - Uptime Kuma:
+        icon: /icons/uptime-kuma.png
+        href: https://status.domain.com
+        description: Uptime dashboard
+        server: apps
+        container: uptime-kuma
+        widget:
+          type: uptimekuma
+          url: https://status.domain.com
+          slug: all
+    - Gitea:
+        icon: /icons/gitea.png
+        href: https://git.domain.com
+        description: Git repository
+        server: apps
+        container: gitea_app
+    - Grafana:
+        icon: /icons/grafana.png
+        href: https://grafana.domain.com
+        description: Grafana dashboards
+        server: grafana
+        container: grafana
+        widget:
+            type: grafana
+            url: https://grafana.domain.com
+            username: # USER
+            password: # PASSWORD
+    - Dokuwiki:
+        icon: /icons/dokuwiki.png
+        href: https://wiki.domain.com
+        description: Wiki documentation
+        server: apps
+        container: dokuwiki
+    - Nextcloud:
+        icon: /icons/nextcloud.png
+        href: https://cloud.domain.com
+        description: Nextcloud
+        server: nextcloud
+        container: nextcloud
+    - Vaultwarden:
+        icon: /icons/bitwarden.png
+        href: https://bitwarden.domain.com
+        description: Password management
+        server: vaultwarden
+        container: vaultwarden
+
+- Docker:
+    - Proxy:
+        icon: /icons/portainer.png
+        href: https://docker.domain.com/#!/1/docker/containers
+        description: Docker swarm master
+        server: proxy
+        container: portainer
+        widget:
+            type: portainer
+            url: # PORTAINER URL:PORT
+            env: 1
+            key: # PORTAINER API KEY
+    - HTPC:
+        icon: /icons/portainer.png
+        href: https://docker.domain.com/#!/3/docker/containers
+        description: Docker swarm node
+        widget:
+            type: portainer
+            url: # PORTAINER URL:PORT
+            env: 3
+            key: # PORTAINER API KEY
+    - Apps02:
+        icon: /icons/portainer.png
+        href: https://docker.domain.com/#!/4/docker/containers
+        description: Docker swarm node
+        widget:
+            type: portainer
+            url: # PORTAINER URL:PORT
+            env: 4
+            key: # PORTAINER API KEY
+    - Nextcloud:
+        icon: /icons/portainer.png
+        href: https://docker.domain.com/#!/6/docker/containers
+        description: Docker swarm node
+        widget:
+            type: portainer
+            url: # PORTAINER URL:PORT
+            env: 6
+            key: # PORTAINER API KEY
+    - Plex:
+        icon: /icons/portainer.png
+        href: https://docker.domain.com/#!/8/docker/containers
+        description: Docker swarm node
+        widget:
+            type: portainer
+            url: # PORTAINER URL:PORT
+            env: 8
+            key: # PORTAINER API KEY
+    - Guacamole:
+        icon: /icons/portainer.png
+        href: https://docker.domain.com/#!/21/docker/containers
+        description: Docker swarm node
+        widget:
+            type: portainer
+            url: # PORTAINER URL:PORT
+            env: 21
+            key: # PORTAINER API KEY
+    - LibreNMS:
+        icon: /icons/portainer.png
+        href: https://docker.domain.com/#!/31/docker/containers
+        description: Docker swarm node
+        widget:
+            type: portainer
+            url: # PORTAINER URL:PORT
+            env: 31
+            key: # PORTAINER API KEY
+    - Deluge:
+        icon: /icons/portainer.png
+        href: https://docker.domain.com/#!/50/docker/containers
+        description: Docker swarm node
+        widget:
+            type: portainer
+            url: # PORTAINER URL:PORT
+            env: 50
+            key: # PORTAINER API KEY
+    - Vaultwarden:
+        icon: /icons/portainer.png
+        href: https://docker.domain.com/#!/51/docker/containers
+        description: Docker swarm node
+        widget:
+            type: portainer
+            url: # PORTAINER URL:PORT
+            env: 51
+            key: # PORTAINER API KEY
